@@ -1,0 +1,155 @@
+/********************** Atajos para Visual Studio  ***********************/
+
+
+-- Controlamos el nivel del sum : ctrl + ||  ctrl -
+
+-- Duplicar lineas de codigo :  shift + alt + flacha arriba o abajo 
+
+-- Mover lineas de codigo : alt + flecha arriba + flecha abajo
+
+-- Colocar comentario rapidos : alt + shift + a 
+
+-- Sacar la terminal : ctrl + ñ
+
+-- Buscar : Ctrl + f 
+
+-- Remplazar todas las palabras de una vez : ctrl + h  `escoger las opciones c o ac`
+
+-- Agregar un 0 o palabra a varias palabras : alt + click 
+
+
+/*************************** Emmet *****************************************/
+
+Codigo: nav>ul>li
+
+<nav>
+  <ul>
+    <li></li>
+  </ul>
+</nav>
+
+Codigo: div+p+span
+
+<div></div>
+<p></p>
+<span></span>
+
+----- Nodos superiores
+
+Codigo: ul>li>div+p^li>span
+
+<ul>
+  <li>
+    <div></div>
+    <p></p>
+  </li>
+  <li><span></span></li>
+</ul>
+
+Codigo : ul>li>div+p^^p
+
+<ul>
+  <li>
+    <div></div>
+    <p></p>
+  </li>
+</ul>
+<p></p>
+
+-------- Multiplicador 
+
+Codigo: ul>li*5>p
+
+<ul>
+  <li>
+    <p></p>
+  </li>
+  <li>
+    <p></p>
+  </li>
+  <li>
+    <p></p>
+  </li>
+  <li>
+    <p></p>
+  </li>
+  <li>
+    <p></p>
+  </li>
+</ul>
+
+----- Agrupacion 
+
+ul>li>(p+span)*2
+
+<ul>
+  <li>
+    <p></p>
+    <span></span>
+    <p></p>
+    <span></span>
+  </li>
+</ul>
+
+------- Atributos id y class 
+
+ul>li>p.text-center#first
+
+<ul>
+  <li>
+    <p class="text-center" id="first"></p>
+  </li>
+</ul>
+
+ul>li>p.text-center.bg-blue#first
+
+<ul>
+  <li>
+    <p class="text-center bg-blue" id="first"></p>
+  </li>
+</ul>
+
+-------- Atributos de html 
+
+ul>li*3>a[target="_blank"]
+
+<ul>
+  <li><a href="" target="_blank"></a></li>
+  <li><a href="" target="_blank"></a></li>
+  <li><a href="" target="_blank"></a></li>
+</ul>
+
+ul>li*3>a[target="_blank" role="link"]
+
+<ul>
+  <li><a href="" target="_blank" role="link"></a></li>
+  <li><a href="" target="_blank" role="link"></a></li>
+  <li><a href="" target="_blank" role="link"></a></li>
+</ul>
+
+---------- Elementos numerados 
+
+ul>li.item$*2>p
+
+<ul>
+  <li class="item1">
+    <p></p>
+  </li>
+  <li class="item2">
+    <p></p>
+  </li>
+</ul>
+
+---------- Elementos numerados personalizados
+
+ul>li.item$@10*2>p
+
+<ul>
+  <li class="item10">
+    <p></p>
+  </li>
+  <li class="item11">
+    <p></p>
+  </li>
+</ul>
+
